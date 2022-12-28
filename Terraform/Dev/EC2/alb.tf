@@ -25,7 +25,8 @@ resource "aws_lb_target_group" "tg-ecs" {
   }
 }
 
-# 리스너 생성 -> ecs에서 생성하므로 주석처리
+# 리스너 생성 -> ecs에서 생성하므로 임시 주석처리
+
 # resource "aws_lb_listener" "alb-listener" {
 #   load_balancer_arn = aws_lb.terraform-alb.arn
 #   port              = 80
