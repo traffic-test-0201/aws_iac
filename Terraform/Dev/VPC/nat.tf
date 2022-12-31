@@ -9,7 +9,8 @@ resource "aws_nat_gateway" "nat" {
 resource "aws_eip" "iac_nat_eip" {
     vpc = true
 
+    #라이프사이클
     lifecycle {
-        create_before_destroy = true #못지우게 설정
+        create_before_destroy = true 
     }
 }

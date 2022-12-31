@@ -15,4 +15,4 @@ bin/
 .env
 *.tfstate*
 *.tfplan*
-mytfplan
+values.tfvars

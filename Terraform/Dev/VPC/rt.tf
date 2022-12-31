@@ -29,7 +29,7 @@ resource "aws_route_table" "terraform-rtb-private1" {
 
 resource "aws_route_table" "terraform-rtb-private2-forDB" {
     vpc_id     = "${aws_vpc.traffic-vpc.id}"
-    depends_on=[aws_subnet.terraform-subnet-private2-ap-northeast-2, aws_subnet.terraform-subnet-private4-ap-northeast-2]
+    depends_on=[aws_subnet.terraform-DBsubnet-private2-ap-northeast-2, aws_subnet.terraform-DBsubnet-private4-ap-northeast-2]
 
     route {
         cidr_block = "0.0.0.0/0"

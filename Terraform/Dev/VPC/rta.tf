@@ -26,10 +26,10 @@ resource "aws_route_table_association" "terraform-rta-private2" {
 #for DB
 resource "aws_route_table_association" "terraform-rta-private3" {
     route_table_id = aws_route_table.terraform-rtb-private2-forDB.id
-    subnet_id = aws_subnet.terraform-subnet-private2-ap-northeast-2.id
+    subnet_id = aws_subnet.terraform-DBsubnet-private2-ap-northeast-2.id
 }
 
 resource "aws_route_table_association" "terraform-rta-private4" {
     route_table_id = aws_route_table.terraform-rtb-private2-forDB.id
-    subnet_id = aws_subnet.terraform-subnet-private4-ap-northeast-2.id
+    subnet_id = aws_subnet.terraform-DBsubnet-private4-ap-northeast-2.id
 }
