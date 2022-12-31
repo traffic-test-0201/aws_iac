@@ -1,4 +1,4 @@
-Steps for running this demo.
+Steps for running this.
 
 ```
 terraform init
