@@ -8,7 +8,7 @@ Steps for running this demo
 ```
 cd s3backend-dynamo
 terraform init
-terraform plan -out=myplan
+terraform plan -out=mytfplan
 terraform apply mytfplan
 ```
 
