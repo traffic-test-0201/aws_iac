@@ -1,10 +1,18 @@
 terraform {
-  required_version = ">= 0.12"
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3.45"
+    }
+  }
+  required_version = ">= 0.15"
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region = "ap-northeast-2"
 }
+
 
 module "private_s3_bucket" {
   source = "yukihira1992/s3-private-bucket/aws"

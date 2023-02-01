@@ -3,10 +3,10 @@ In this example, we have made 2 modules, User Module and Customer Module.I have 
 Steps for creating resources in dev environment.
 
 ```
-cd module-example/env/dev
+cd module/dev
 terraform init
-terraform plan -out=myplan
-terraform apply
+terraform plan -var-file=values.tfvars -out=mytfplan
+terraform apply mytfplan
 ```
 
 Similar approach will be taken for stage/prod environment.We can pass it different values for different environment.
