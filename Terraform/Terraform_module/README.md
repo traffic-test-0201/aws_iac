@@ -8,7 +8,6 @@ terraform init
 terraform plan -var-file=values.tfvars -out=mytfplan
 terraform apply mytfplan
 ```
-
 Similar approach will be taken for stage/prod environment.We can pass it different values for different environment.
 
 If you will see, I have changed the provider region for each environment.
